@@ -1,6 +1,3 @@
-  application:
-    name: Rating-SERVICE
-
 eureka:
   instance:
     prefer-ip-address: true

@@ -1,8 +1,11 @@
+  application:
+    name: Rating-SERVICE
+
 eureka:
   instance:
-    hostname: localhost
+    prefer-ip-address: true
   client:
-    register-with-eureka: false
-    fetch-registry: false
-server:
-  port: 8761
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
